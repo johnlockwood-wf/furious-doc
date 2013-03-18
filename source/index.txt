@@ -6,3 +6,4 @@ Furious Project
 
    example
    furious
+   design
