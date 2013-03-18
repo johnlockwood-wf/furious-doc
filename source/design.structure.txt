@@ -1,16 +1,22 @@
-Persistence Proposal
-================================
+Proposal of Interface and Requirements for Persistence
+====================================
 
 **************************
 Abstract
 **************************
-
+The Furious framework needs a persistence layer to enable a
+callback when a group of tasks have all completed. These are the
+functions the persistence layer implements. Some are optional
+functions to implement logic optimized to a particular persistence
+technology. The framework implements the logic which works
+with any key/value storage system, which will be used if the 
+persistence layer has not implemented custom logic.
 
 **************************
 Specification
 **************************
 
-Marker  and Marker Graph Storage
+Marker and Marker Graph Storage
 -------------------------------------
 
 ``marker_persist(marker, save_leaves=True)``
